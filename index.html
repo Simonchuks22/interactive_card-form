@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title >Interactive card details form</title>
+    <!-- <script src="https://unpkg.com/imask" defer></script> -->
+    <script src="dom.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <main>
+<div class="card_details">
+    <aside class="first" id="first">
+         <div class="front_card">
+            <!-- FRONT CARD -->
+           <figure>
+            <img src="/images/card-logo.svg" alt="front-cardlogo">
+           </figure>
+           <section class="front_card_details">
+        <h2 class="front_card_number" id="number_details">
+            0000 0000 0000 0000
+        </h2>
+
+            <h3 class="front_card_name" id="name_details">
+
+                Jane Appleseed</h3>
+              <div class="front_expire_details">
+                <h3 class="expire_date" id="exp_month">00</h3>
+                <span class="front_slash">/</span>
+                <h3 class="expire_date" id="exp_year">00</h3>
+              </div>
+           </section>
+         </div>
+         <!-- BACK-CARD -->
+         <div class="back_card">
+            <h2 class="back_card_number" id="CVC_number">000</h2>
+         </div>
+            
+    </aside>
+         <!-- FORM PART -->
+            <form id="form">
+            
+  
+                   <label for="name">Cardholder Name</label>
+                <input type="text" class="form_name_entry" id="form_name" maxlength="25" placeholder="e.g. Jane Appleseed">
+         <span class="span_error" id="name_wrong"></span>
+                <label for="text">Card Number</label>
+                <input type="text" class="form_number_entry" id="form_number" minlength="19" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+                <span class="span_error" id="number_wrong"></span>
+              <div class="form_exp_cvc">
+                   <div class="form_expire_part">
+
+                <label for="date">Exp. Date (MM/YY)</label> <br>
+                <input type="text" class="form_mon_exp" id="mon_exp" maxlength="2" placeholder="MM"><input type="text" class="form_date_exp" id="date-exp" minlength="2" maxlength="2" placeholder="YY">
+                <span class="span_error" id="exp_wrong"></span>
+                </div>
+                     <div class="form_cvc_part">
+
+                <label for="text">CVC</label> <br>
+                <input type="text" id="cvc" maxlength="3" placeholder="e.g. 123">
+                <span class="span_error" id="cvc_wrong"></span>
+                     </div>
+                     </div>
+
+              <input type="button" class="form_btn" value="confirm">
+
+            </form>
+         
+</div>
+
+     </main>
+
+
+
+  
+</body>
+</html>

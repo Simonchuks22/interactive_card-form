@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Interactive card details form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://unpkg.com/imask" defer></script> -->
+    <script src="dom.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="card_details">
+            <aside class="first" id="fisrt">
+                 <div class="front_card">
+                    <!-- FRONT CARD -->
+                   <figure>
+                    <img src="/images/card-logo.svg" alt="front-cardlogo">
+                   </figure>
+                   <section class="front_card_details">
+                <h2 class="front_card_number" id="number_details">
+                    0000 0000 0000 0000
+                </h2>
+        
+                    <h3 class="front_card_name" id="name_details">
+        
+                        Jane Appleseed</h3>
+                      <div class="front_expire_details">
+                        <h3 class="expire_date" id="exp_month">00</h3>
+                        <span class="front_slash">/</span>
+                        <h3 class="expire_date" id="exp_year">00</h3>
+                      </div>
+                   </section>
+                 </div>
+                 <!-- BACK-CARD -->
+                 <div class="back_card">
+                    <h2 class="back_card_number" id="CVC_number">000</h2>
+                 </div>
+                    
+            </aside>
+            <!-- OkAY AREA -->
+            <div class="OKAY">
+            <figure>
+                <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+            </figure>
+            <section class="okay_text">
+                <h1 class="okay_head">OKAY ✔</h1>
+                <p class="okay_parag">YOUR DETIALS HAVE BEEN SUCCESSFULLY SUBMITTED</p>
+                     <button class="okay_btn" id="next_btn">Next</button>
+            </section>
+
+            </div>
+        </div>
+
+
+</body>
+</html>
